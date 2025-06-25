@@ -1,8 +1,20 @@
 inspecode:
   tasks:
-    - name: repo
+    - name: analyze-cov
       type: shell
       commands:
-         - repo init -u https://github.com/tetrafolium/repo-manifest.git -b issues-5528-Virtual-Branch-Add-yaml
-         - repo sync
-         - ls -a
+        - repo init -u https://github.com/tetrafolium/repo-manifest.git -b issues-5528-Virtual-Branch-Add-yaml
+        - repo sync
+        - export REPODIR=$(pwd)
+        - echo $REPODIR
+        - ls -alt "$REPODIR"
+        - cd $REPODIR/sources/meta-openembedded/ant
+        - cov-build --dir $REPODIR/cov-im --parallel-translate=1 ant
+        - cov-analyze --dir $REPODIR/cov-im
+        - cov-format-errors --dir $REPODIR/cov-im --json-output-v7 $REPODIR/sources/meta-openembedded/coverity-report.json
+      artifacts:
+        - path: sources/meta-openembedded/coverity-report.json
+      reports:
+        - path: sources/meta-openembedded/coverity-report.json
+      tools:
+        - coverity
