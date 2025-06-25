@@ -1,7 +1,8 @@
-tasks:
-  - name: checkout-repositories
-    type: shell
-    commands:
-      - repo init -u https://github.com/tetrafolium/repo-manifest.git -b issues-5528-Virtual-Branch-Add-yaml
-      - repo sync
-      - ls -a
+inspecode:
+  tasks:
+    - name: checkout-repositories
+      type: shell
+      commands:
+         - repo init -u https://github.com/tetrafolium/repo-manifest.git -b issues-5528-Virtual-Branch-Add-yaml
+         - repo sync
+         - ls -a
