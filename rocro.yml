@@ -5,4 +5,3 @@ tasks:
       - repo init -u https://github.com/tetrafolium/repo-manifest.git -b issues-5528-Virtual-Branch-Add-yaml
       - repo sync
       - ls -a
-
