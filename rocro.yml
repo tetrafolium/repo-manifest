@@ -1,9 +1,9 @@
 tasks:
   checkout:
-    name: "Checkout Repositories"
+    name: "checkout-repositories"
     type: shell
     commands:
       main:
-        - repo init -u https://your-repo-manifest-url/default.xml -b your-branch
+        - repo init -u https://github.com/tetrafolium/repo-manifest.git -b issues-5528-Virtual-Branch-Add-yaml
         - repo sync
-        - ls -la
+        - ls -a
