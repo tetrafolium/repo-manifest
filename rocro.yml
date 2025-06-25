@@ -1,0 +1,9 @@
+tasks:
+  checkout:
+    name: "Checkout Repositories"
+    type: shell
+    commands:
+      main:
+        - repo init -u https://your-repo-manifest-url/default.xml -b your-branch
+        - repo sync
+        - ls -la
