@@ -1,0 +1,3 @@
+[submodule "sources/meta-openembedded"]
+	path = sources/meta-openembedded
+	url = https://github.com/tetrafolium/sel4test-manifest.git
