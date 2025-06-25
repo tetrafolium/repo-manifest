@@ -8,6 +8,7 @@
   <remote name="github" fetch="https://github.com/"/>
   <remote name="seapath" fetch="https://github.com/seapath"/>
   <remote name="oe" fetch="https://github.com/openembedded"/>
+  <remote name="tetrafolium" fetch="https://github.com/tetrafolium/"/>
 
   <!-- SEAPATH main Yocto project -->
   <project name="yocto-bsp" revision="scarthgap" remote="seapath" path="."/>
@@ -15,7 +16,7 @@
 
   <!-- Upstream Yocto & OpenEmbedded Projects -->
   <project name="poky" revision="scarthgap" remote="yocto" path="sources/poky"/>
-  <project remote="oe" revision="scarthgap" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="tetrafolium" revision="scarthgap" name="meta-openembedded" path="sources/meta-openembedded"/>
   <project remote="yocto" revision="scarthgap" name="meta-virtualization" path="sources/meta-virtualization"/>
   <project remote="yocto" revision="scarthgap" name="meta-dpdk" path="sources/meta-dpdk"/>
   <project remote="yocto" revision="scarthgap" name="meta-intel" path="sources/meta-intel"/>
