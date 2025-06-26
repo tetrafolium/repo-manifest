@@ -3,6 +3,7 @@ inspecode:
     - name: coverity-fix
       type: shell
       commands:
+        - mkdir -p .reports
         - repo init -u https://github.com/tetrafolium/repo-manifest.git -b issues-5528-Virtual-Branch-Add-yaml
         - repo sync
         - sed -i 's|/home/rocro/src/github.com/tetrafolium/meta-openembedded/|/home/rocro/src/github.com/tetrafolium/repo-manifest/sources/meta-openembedded/|g' sources/meta-openembedded/artifacts_report.json
