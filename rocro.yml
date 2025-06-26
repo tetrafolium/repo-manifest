@@ -3,6 +3,7 @@ inspecode:
     - name: repo
       type: shell
       commands:
+        - apt-get update && apt-get install -y unzip
         - repo init -u https://github.com/tetrafolium/repo-manifest.git -b issues-5528-Virtual-Branch-Add-yaml
         - repo sync
         - ls -a sources/meta-openembedded
