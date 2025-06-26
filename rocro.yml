@@ -13,3 +13,4 @@ inspecode:
         - path: ./artifacts_report.json
       reports:
         - path: ./artifacts_report.json
+          type: coverity
