@@ -5,7 +5,7 @@ inspecode:
       commands:
         - sudo repo init -u https://github.com/tetrafolium/repo-manifest.git -b issues-5528-Virtual-Branch-Add-yaml-Coverity
         - sudo repo sync
-        - sudo sed -i 's|/home/rocro/src/github.com/tetrafolium/meta-openembedded/||g' sources/meta-openembedded/artifacts_report.json
+        - sudo sed -i 's|/home/rocro/src/github.com/tetrafolium/meta-openembedded/|sources/meta-openembedded/|g' sources/meta-openembedded/artifacts_report.json
         - sudo ls -alt ./
         - sudo cat sources/meta-openembedded/artifacts_report.json
       artifacts:
