@@ -6,5 +6,5 @@
   <!-- Remote repositories definition -->
   <remote name="tetrafolium" fetch="https://github.com/tetrafolium/"/>
 
-  <project remote="tetrafolium" revision="scarthgap" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="tetrafolium" revision="scarthgap" name="meta-openembedded" path="meta-openembedded"/>
 </manifest>
