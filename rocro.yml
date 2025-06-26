@@ -3,12 +3,12 @@ inspecode:
     - name: repo
       type: shell
       commands:
-        - repo init -u https://github.com/tetrafolium/repo-manifest.git -b issues-5528-Virtual-Branch-Add-yaml-Coverity
+        - repo init -u https://github.com/tetrafolium/repo-manifest.git -b issues-5528-Virtual-Branch-Add-yaml
         - repo sync
-        - ls -a sources/meta-openembedded
+        - sed -i 's|/home/rocro/src/github.com/tetrafolium/meta-openembedded/|sources/meta-openembedded/|g' ./artifacts_report.json
+        - cp sources/meta-openembedded/artifacts_report.json ./artifacts_report.json
+        - cat ./artifacts_report.json
       artifacts:
-        - path: sources/meta-openembedded/artifacts_report.json
-        - path: sources/meta-openembedded/artifacts_result.fpr
+        - path: ./artifacts_report.json
       reports:
-        - path: sources/meta-openembedded/artifacts_report.json
-        - path: sources/meta-openembedded/artifacts_result.fpr
+        - path: ./artifacts_report.json
