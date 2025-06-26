@@ -5,10 +5,8 @@ inspecode:
       commands:
         - repo init -u https://github.com/tetrafolium/repo-manifest.git -b issues-5528-Virtual-Branch-Add-yaml
         - repo sync
-        - ls -l sources/meta-openembedded/ant/src/oata/HelloWorld.java
-        - cat sources/meta-openembedded/ant/src/oata/HelloWorld.java
         - cp sources/meta-openembedded/artifacts_report.json ./artifacts_report.json
-        - sed -i 's|/home/rocro/src/github.com/tetrafolium/meta-openembedded/|sources/meta-openembedded/|g' ./artifacts_report.json
+        - sed -i 's|.*/sources/meta-openembedded/||g' ./artifacts_report.json
         - echo "------ artifacts_report.json full content ------"
         - cat ./artifacts_report.json
       artifacts:
