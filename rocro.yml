@@ -6,9 +6,11 @@ inspecode:
         - repo init -u https://github.com/tetrafolium/repo-manifest.git -b issues-5528-Virtual-Branch-Add-yaml
         - repo sync
         - ls -a sources/meta-openembedded
+        - cp sources/meta-openembedded/artifacts_report.json .
+        - cp sources/meta-openembedded/artifacts_result.fpr .
       artifacts:
-        - path: sources/meta-openembedded/artifacts_report.json
-        - path: sources/meta-openembedded/artifacts_result.fpr
+        - path: artifacts_report.json
+        - path: artifacts_result.fpr
       reports:
-        - path: sources/meta-openembedded/artifacts_report.json
-        - path: sources/meta-openembedded/artifacts_result.fpr
+        - path: artifacts_report.json
+        - path: artifacts_result.fpr
