@@ -6,7 +6,7 @@ inspecode:
         - repo init -u https://github.com/tetrafolium/repo-manifest.git -b issues-5528-Virtual-Branch-Add-yaml
         - repo sync
         - cp sources/meta-openembedded/artifacts_report.json ./artifacts_report.json
-        - sed -i 's|/home/rocro/src/github.com/tetrafolium/meta-openembedded/|meta-openembedded/|g' ./artifacts_report.json
+        - sed -i 's|/home/rocro/src/github.com/tetrafolium/meta-openembedded/|/home/rocro/src/github.com/tetrafolium/repo-manifest/sources/meta-openembedded/|g' ./artifacts_report.json
         - echo "------ artifacts_report.json full content ------"
         - cat ./artifacts_report.json
       artifacts:
