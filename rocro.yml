@@ -1,17 +1,14 @@
 inspecode:
-  tools:
-    coverity:
-      options:
-        --commands:
+  tasks:
+    - name: repo
+      type: shell
+      commands:
         - repo init -u https://github.com/tetrafolium/repo-manifest.git -b issues-5528-Virtual-Branch-Add-yaml
         - repo sync
-        - export REPODIR=$(pwd)
-        - echo $REPODIR
-        - ls -alt $REPODIR
-        - cd $REPODIR/sources/meta-openembedded/ant
-        - cov-build --dir ~/cov-im --parallel-translate=1 ant
-    fortify:
-      options:
-        --commands:
-        - sourceanalyzer -b build_id ant clean compile-partial
-        --work-dir: .
+        - ls -a sources/meta-openembedded
+      artifacts:
+        - path: sources/meta-openembedded/artifacts_report.json
+        - path: sources/meta-openembedded/artifacts_result.fpr
+      reports:
+        - path: sources/meta-openembedded/artifacts_report.json
+        - path: sources/meta-openembedded/artifacts_result.fpr
