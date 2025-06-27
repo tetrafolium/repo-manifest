@@ -11,6 +11,7 @@
       "results": [
         {
           "ruleId": "FORWARD_NULL",
+          "level": "warning",
           "message": {
             "text": "Calling a method on null object \"s\"."
           },
@@ -26,11 +27,11 @@
                 }
               }
             }
-          ],
-          "severity": "warning"
+          ]
         },
         {
           "ruleId": "USELESS_CALL",
+          "level": "warning",
           "message": {
             "text": "Calling \"s.length()\" is only useful for its return value, which is ignored."
           },
@@ -46,8 +47,7 @@
                 }
               }
             }
-          ],
-          "severity": "warning"
+          ]
         }
       ]
     }
