@@ -1,10 +1,11 @@
 inspecode:
-  tools:
-    coverity:
-      options:
-        --commands:
-        - export REPODIR=$(pwd)
-        - echo $REPODIR
-        - ls -alt $REPODIR
-        - cd $REPODIR/ant
-        - cov-build --dir ~/cov-im --parallel-translate=1 ant
+  tasks:
+    - name: child-repo
+      type: shell
+      commands:
+        - sudo ls -alt ./
+        - sudo cat ./report.sarif
+      artifacts:
+        - path: ./report.sarif
+      reports:
+        - path: ./report.sarif
