@@ -17,4 +17,4 @@ inspecode:
       name: git-repo-task
       type: shell
       commands:
-        - echo "dummy"
+        - echo "Git-repo setup only"
