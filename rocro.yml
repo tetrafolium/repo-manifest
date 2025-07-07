@@ -9,3 +9,5 @@ inspecode:
         - path: ./report.sarif
       reports:
         - path: ./report.sarif
+      git-repo:
+        sharing: false 
