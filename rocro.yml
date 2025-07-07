@@ -9,5 +9,10 @@ inspecode:
         - path: ./report.sarif
       reports:
         - path: ./report.sarif
-      git-repo:
-        sharing: true
+    - git-repo:
+        set-up:
+          - repo init -u ./ -b git-repo-task-configuration -m ./default.xml
+          - repo sync
+          - ls -a
+      name: git-repo-task
+      type: shell
