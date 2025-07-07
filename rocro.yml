@@ -10,4 +10,4 @@ inspecode:
       reports:
         - path: ./report.sarif
       git-repo:
-        sharing: false 
+        sharing: false
