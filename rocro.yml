@@ -16,3 +16,5 @@ inspecode:
           - ls -a
       name: git-repo-task
       type: shell
+      commands:
+        - echo "dummy"
