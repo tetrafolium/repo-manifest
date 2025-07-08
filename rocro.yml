@@ -15,7 +15,7 @@ inspecode:
           - repo sync
           - echo "custom repo init"
           - echo "custom repo sync"
-        name: git-repo-task
-        type: shell
-        commands:
-          - echo "Git-repo setup only"
+      name: git-repo-task
+      type: shell
+      commands:
+        - echo "Git-repo setup only"
