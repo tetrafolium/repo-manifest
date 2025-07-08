@@ -10,6 +10,7 @@ inspecode:
       reports:
         - path: ./report.sarif
     - git-repo:
+        sharing: true
       name: git-repo-task
       type: shell
       commands:
