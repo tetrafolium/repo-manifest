@@ -10,11 +10,7 @@ inspecode:
       reports:
         - path: ./report.sarif
     - git-repo:
-        set-up:
-          - repo init -u ./ -b git-repo-task-configuration -m ./default.xml
-          - repo sync
-          - echo "custom repo init"
-          - echo "custom repo sync"
+        sharing: false
       name: git-repo-task
       type: shell
       commands:
