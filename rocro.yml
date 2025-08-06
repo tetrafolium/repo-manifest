@@ -26,6 +26,8 @@ inspecode:
         - ls -alt $REPODIR/sources/meta-openembedded
         - ls -alt $REPODIR/sources/meta-openembedded/ant
         - cd $REPODIR/sources/meta-openembedded/ant
+        - export PATH=/opt/coverity/bin:$PATH
+        - which cov-build
         - cov-build --dir ~/cov-im --parallel-translate=1 ant
 
   tools:
