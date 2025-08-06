@@ -23,5 +23,6 @@ inspecode:
           - ls -alt $REPODIR
           - ls -alt $REPODIR/sources
           - ls -alt $REPODIR/sources/meta-openembedded
+          - ls -alt $REPODIR/sources/meta-openembedded/ant
           - cd $REPODIR/sources/meta-openembedded/ant
           - cov-build --dir ~/cov-im --parallel-translate=1 ant
