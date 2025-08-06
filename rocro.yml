@@ -20,5 +20,6 @@ inspecode:
           - export REPODIR=$(pwd)
           - echo $REPODIR
           - ls -alt $REPODIR
+          - ls -alt $REPODIR/sources
           - cd $REPODIR/ant
           - cov-build --dir ~/cov-im --parallel-translate=1 ant
