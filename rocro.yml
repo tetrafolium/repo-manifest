@@ -1,15 +1,5 @@
 inspecode:
   tasks:
-    - name: child-repo
-      type: shell
-      commands:
-        - sudo ls -alt ./
-        - sudo cat ./report.sarif
-      artifacts:
-        - path: ./report.sarif
-      reports:
-        - path: ./report.sarif
-
     - git-repo:
         manifest: ./default.xml
         set-up:
@@ -19,26 +9,12 @@ inspecode:
       name: git-repo-task
       type: shell
       commands:
+        - - ls -alt ./
+  coverity:
+    options:
+      --commands:
         - export REPODIR=$(pwd)
         - echo $REPODIR
         - ls -alt $REPODIR
-        - ls -alt $REPODIR/sources
-        - ls -alt $REPODIR/sources/meta-openembedded
-        - ls -alt $REPODIR/sources/meta-openembedded/ant
-        - cd $REPODIR/sources/meta-openembedded/ant
-        - export PATH=/opt/coverity/bin:$PATH
-        - which cov-build
+        - cd $REPODIR/ant
         - cov-build --dir ~/cov-im --parallel-translate=1 ant
-
-  tools:
-    coverity:
-      options:
-        --commands:
-          - export REPODIR=$(pwd)
-          - echo $REPODIR
-          - ls -alt $REPODIR
-          - ls -alt $REPODIR/sources
-          - ls -alt $REPODIR/sources/meta-openembedded
-          - ls -alt $REPODIR/sources/meta-openembedded/ant
-          - cd $REPODIR/sources/meta-openembedded/ant
-          - cov-build --dir ~/cov-im --parallel-translate=1 ant
