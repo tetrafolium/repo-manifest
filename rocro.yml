@@ -1,4 +1,12 @@
 inspecode:
+  coverity:
+    options:
+      --commands:
+        - export REPODIR=$(pwd)
+        - echo $REPODIR
+        - ls -alt $REPODIR
+        - cd $REPODIR/ant
+        - cov-build --dir ~/cov-im --parallel-translate=1 ant
   tasks:
     - name: git-repo-task
       type: shell
@@ -10,11 +18,3 @@ inspecode:
         sharing: false
       commands:
         - ls -alt ./
-  coverity:
-    options:
-      --commands:
-        - export REPODIR=$(pwd)
-        - echo $REPODIR
-        - ls -alt $REPODIR
-        - cd $REPODIR/ant
-        - cov-build --dir ~/cov-im --parallel-translate=1 ant
