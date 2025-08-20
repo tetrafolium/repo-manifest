@@ -18,4 +18,3 @@ inspecode:
         sharing: false
       commands:
         - ls -alt ./
-      reports: []
