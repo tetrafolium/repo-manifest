@@ -3,10 +3,10 @@ inspecode:
     options:
       --commands:
         - export REPODIR=$(pwd)
+        - echo $REPODIR
+        - ls -alt $REPODIR
         - cd $REPODIR/ant
         - cov-build --dir ~/cov-im --parallel-translate=1 ant
-        - cov-analyze --dir ~/cov-im
-
   tasks:
     - name: git-repo-task
       type: shell
@@ -16,17 +16,6 @@ inspecode:
           - repo init -u ./ -b git-repo-task-configuration -m ./default.xml
           - repo sync
         sharing: true
-      artifacts:
-        downloads:
-          - source:
-              task: Coverity
-              path: artifacts/report_2.sarif
-            destination:
-              path: ./artifacts/report_2.sarif
+      pre-tasks: Coverity 
       commands:
-        main:
-          - echo "Shell task processing"
-          - ls -alt $REPODIR
-          - cat ./coverity.sarif
-      reports:
-        - ./artifacts/report_2.sarif
+        - ls -alt ./
