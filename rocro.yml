@@ -3,13 +3,10 @@ inspecode:
     options:
       --commands:
         - export REPODIR=$(pwd)
-        - echo $REPODIR
-        - ls -alt $REPODIR
         - cd $REPODIR/ant
         - cov-build --dir ~/cov-im --parallel-translate=1 ant
-        - cov-analyze --dir ~/cov-im --all
-        - cov-format-errors --dir ~/cov-im --sarif-output coverity-results.sarif
-
+        - cov-analyze --dir ~/cov-im
+        - cov-format-errors --dir ~/cov-im --sarif-output $REPODIR/coverity.sarif
   tasks:
     - name: git-repo-task
       type: shell
@@ -18,11 +15,10 @@ inspecode:
         set-up:
           - repo init -u ./ -b git-repo-task-configuration -m ./default.xml
           - repo sync
-        sharing: false
+        sharing: true
       commands:
-        - echo "Start Coverity SARIF export"
-        - cov-analyze --dir ~/cov-im --all
-        - cov-format-errors --dir ~/cov-im --sarif-output coverity-results.sarif
-        - ls -alt .
+        main:
+          - echo "Shell task processing"
+          - ls -alt $REPODIR
       artifacts:
-        - path: coverity-results.sarif
+        - path: coverity.sarif
