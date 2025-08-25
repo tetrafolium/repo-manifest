@@ -6,7 +6,8 @@ inspecode:
         - cd $REPODIR/ant
         - cov-build --dir ~/cov-im --parallel-translate=1 ant
         - cov-analyze --dir ~/cov-im
-        - cov-format-errors --dir ~/cov-im --sarif-output $REPODIR/coverity.sarif
+        - cov-format-errors --dir ~/cov-im --format sarif > $REPODIR/coverity.sarif
+        - ls -alt $REPODIR
   tasks:
     - name: git-repo-task
       type: shell
