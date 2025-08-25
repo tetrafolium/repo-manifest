@@ -7,6 +7,9 @@ inspecode:
         - ls -alt $REPODIR
         - cd $REPODIR/ant
         - cov-build --dir ~/cov-im --parallel-translate=1 ant
+        - cov-analyze --dir ~/cov-im --all
+        - cov-format-errors --dir ~/cov-im --sarif-output coverity-results.sarif
+
   tasks:
     - name: git-repo-task
       type: shell
@@ -17,4 +20,9 @@ inspecode:
           - repo sync
         sharing: false
       commands:
-        - ls -alt ./
+        - echo "Start Coverity SARIF export"
+        - cov-analyze --dir ~/cov-im --all
+        - cov-format-errors --dir ~/cov-im --sarif-output coverity-results.sarif
+        - ls -alt .
+      artifacts:
+        - path: coverity-results.sarif
