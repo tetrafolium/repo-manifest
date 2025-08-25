@@ -6,8 +6,6 @@ inspecode:
         - cd $REPODIR/ant
         - cov-build --dir ~/cov-im --parallel-translate=1 ant
         - cov-analyze --dir ~/cov-im
-    artifacts:
-      - coverity.sarif
 
   tasks:
     - name: git-repo-task
@@ -22,13 +20,13 @@ inspecode:
         downloads:
           - source:
               task: Coverity
-              path: coverity.sarif
+              path: artifacts/report_2.sarif
             destination:
-              path: ./coverity.sarif
+              path: ./artifacts/report_2.sarif
       commands:
         main:
           - echo "Shell task processing"
           - ls -alt $REPODIR
           - cat ./coverity.sarif
       reports:
-        - ./coverity.sarif
+        - ./artifacts/report_2.sarif
