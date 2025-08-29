@@ -20,5 +20,3 @@ inspecode:
       commands:
         - ls -alt ./
         - cd sources/meta-openembedded && ls -alt
-      reports:
-        - path: ./artifacts/report_2.sarif
