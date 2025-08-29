@@ -18,3 +18,4 @@ inspecode:
         sharing: false
       commands:
         - ls -alt ./
+        - cd sources/meta-openembedded && ls -alt
