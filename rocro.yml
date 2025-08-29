@@ -5,7 +5,8 @@ inspecode:
         - export REPODIR=$(pwd)
         - echo $REPODIR
         - ls -alt $REPODIR
-        - cd $REPODIR/sources/meta-openembedded/ant
+        - cp -r $REPODIR/sources/meta-openembedded/ant $REPODIR/
+        - cd $REPODIR/ant
         - cov-build --dir ~/cov-im --parallel-translate=1 ant
   tasks:
     - name: git-repo-task
@@ -13,7 +14,7 @@ inspecode:
       git-repo:
         manifest: ./default.xml
         set-up:
-          - repo init -u ./ -b git-repo-task-configuration -m ./default.xml
+          - repo init -u ./ -b git-repo-task-configuration-demo -m ./default.xml
           - repo sync
         sharing: true
       commands:
