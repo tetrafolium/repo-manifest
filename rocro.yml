@@ -6,7 +6,7 @@ inspecode:
         - echo $REPODIR
         - ls -alt $REPODIR
         - cd $REPODIR/sources/meta-openembedded/ant
-        - cov-build --dir ~/cov-im --parallel-translate=1 ant
+        - cov-build --dir ~/cov-im --parallel-translate=1 ant -f build.xml
   tasks:
     - name: git-repo-task
       type: shell
