@@ -1,15 +1,6 @@
 inspecode:
-  coverity:
-    options:
-      --commands:
-        - export REPODIR=$(pwd)
-        - echo $REPODIR
-        - ls -alt $REPODIR
-        - cp -r $REPODIR/sources/meta-openembedded/ant $REPODIR/
-        - cd $REPODIR/ant
-        - cov-build --dir ~/cov-im --parallel-translate=1 ant
   tasks:
-    - name: git-repo-task
+    - name: git-repo-task-meta-openembedded
       type: shell
       git-repo:
         manifest: ./default.xml
@@ -20,3 +11,23 @@ inspecode:
       commands:
         - ls -alt ./
         - cd sources/meta-openembedded && ls -alt
+      artifacts:
+        - path: ./report.json
+      reports:
+        - path: ./report.json
+
+    - name: git-repo-task-nanopb
+      type: shell
+      git-repo:
+        manifest: ./default.xml
+        set-up:
+          - repo init -u ./ -b git-repo-task-configuration-demo -m ./default.xml
+          - repo sync
+        sharing: true
+      commands:
+        - ls -alt ./
+        - cd sources/meta-openembedded && ls -alt
+      artifacts:
+        - path: ./report.json
+      reports:
+        - path: ./report.json
