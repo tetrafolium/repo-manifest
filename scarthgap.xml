@@ -5,6 +5,19 @@
 <manifest>
   <!-- Remote repositories definition -->
   <remote name="tetrafolium" fetch="https://github.com/tetrafolium/"/>
+  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+  <remote name="github" fetch="https://github.com/"/>
+  <remote name="seapath" fetch="https://github.com/seapath"/>
+  <remote name="oe" fetch="https://github.com/openembedded"/>
 
+  <project name="poky" revision="scarthgap" remote="yocto" path="sources/poky"/>
+  <project remote="yocto" revision="scarthgap" name="meta-virtualization" path="sources/meta-virtualization"/>
+  <project remote="yocto" revision="scarthgap" name="meta-dpdk" path="sources/meta-dpdk"/>
+  <project remote="yocto" revision="scarthgap" name="meta-intel" path="sources/meta-intel"/>
+  <project remote="yocto" revision="scarthgap" name="meta-security" path="sources/meta-security"/>
+  <project remote="yocto" revision="scarthgap" name="meta-selinux" path="sources/meta-selinux"/>
+  <project remote="yocto" revision="scarthgap" name="meta-cgl" path="sources/meta-cgl"/>
+  <project remote="yocto" revision="scarthgap" name="meta-cloud-services" path="sources/meta-cloud-services"/>
   <project remote="tetrafolium" revision="543b0faec3c86ce0a11ec01236941c601f8f7c92" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="tetrafolium" revision="2bee75e5dad86ab5685ea9009eaf0b6e39bb01ce" name="nanopb" path="sources/nanopb"/>
 </manifest>
