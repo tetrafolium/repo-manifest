@@ -18,6 +18,6 @@
   <project remote="yocto" revision="scarthgap" name="meta-selinux" path="sources/meta-selinux"/>
   <project remote="yocto" revision="scarthgap" name="meta-cgl" path="sources/meta-cgl"/>
   <project remote="yocto" revision="scarthgap" name="meta-cloud-services" path="sources/meta-cloud-services"/>
-  <project remote="tetrafolium" revision="543b0faec3c86ce0a11ec01236941c601f8f7c92" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="tetrafolium" revision="2420dd3219eb1d9cbf8327f0b4aca6ec65666cea" name="meta-openembedded" path="sources/meta-openembedded"/>
   <project remote="tetrafolium" revision="889b5059fbabb8404cc9689e76fd102652a91915" name="nanopb" path="sources/nanopb"/>
 </manifest>
