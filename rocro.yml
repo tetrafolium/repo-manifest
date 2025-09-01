@@ -1,6 +1,6 @@
 inspecode:
   tasks:
-    - name: git-repo-task-meta-openembedded
+    - name: git-repo-task
       type: shell
       git-repo:
         manifest: ./default.xml
@@ -16,7 +16,7 @@ inspecode:
       reports:
         - path: ./report.json
 
-    - name: git-repo-task-nanopb
+    - name: nanopb-task
       type: shell
       git-repo:
         manifest: ./default.xml
