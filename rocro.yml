@@ -13,8 +13,6 @@ inspecode:
         - cd sources/meta-openembedded && ls -alt
       artifacts:
         - path: ./meta-openembedded_report.sarif
-      reports:
-        - path: ./meta-openembedded_report.sarif
 
     - name: nanopb-task
       type: shell
@@ -28,6 +26,4 @@ inspecode:
         - ls -alt ./
         - cd sources/meta-openembedded && ls -alt
       artifacts:
-        - path: ./nanopb_report.sarif
-      reports:
         - path: ./nanopb_report.sarif
