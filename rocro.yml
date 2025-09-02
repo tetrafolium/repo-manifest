@@ -11,13 +11,13 @@ inspecode:
       commands:
         - ls -alt ./
         - cd sources/meta-openembedded && ls -alt
-      artifacts:
-        - path: ./meta-openembedded_report.sarif
+      reports:
+        - path: ./report.json
 
     - name: nanopb-task
       type: shell
       git-repo:
-        manifest: ./default.xml
+        manifest: ./default2.xml
         set-up:
           - repo init -u ./ -b git-repo-task-configuration-demo -m ./default.xml
           - repo sync
@@ -25,5 +25,5 @@ inspecode:
       commands:
         - ls -alt ./
         - cd sources/meta-openembedded && ls -alt
-      artifacts:
-        - path: ./nanopb_report.sarif
+      reports:
+        - path: ./report.json
