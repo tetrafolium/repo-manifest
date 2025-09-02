@@ -7,7 +7,7 @@
   <remote name="tetrafolium" fetch="https://github.com/tetrafolium/"/>
   <remote name="yocto" fetch="git://git.yoctoproject.org"/>
   <remote name="github" fetch="https://github.com/"/>
-  <remote name="seapath" fetch="https://github.com/seapath"/>
+  <remote name="seapath" fetch="https://github.com/seapath/"/>
   <remote name="oe" fetch="https://github.com/openembedded"/>
 
   <!-- SEAPATH main Yocto project -->
