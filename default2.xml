@@ -5,16 +5,11 @@
 <manifest>
   <!-- Remote repositories definition -->
   <remote name="tetrafolium" fetch="https://github.com/tetrafolium/"/>
-  <remote name="yocto" fetch="git://git.yoctoproject.org/"/>
+  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
   <remote name="github" fetch="https://github.com/"/>
-  <remote name="seapath" fetch="https://github.com/seapath/"/>
+  <remote name="seapath" fetch="https://github.com/seapath"/>
   <remote name="oe" fetch="https://github.com/openembedded"/>
 
-  <!-- SEAPATH main Yocto project -->
-  <project name="yocto-bsp" revision="scarthgap" remote="seapath" path="."/>
-
-
-  <!-- Upstream Yocto & OpenEmbedded Projects -->
   <project name="poky" revision="scarthgap" remote="yocto" path="sources/poky"/>
   <project remote="yocto" revision="scarthgap" name="meta-virtualization" path="sources/meta-virtualization"/>
   <project remote="yocto" revision="scarthgap" name="meta-dpdk" path="sources/meta-dpdk"/>
@@ -25,15 +20,4 @@
   <project remote="yocto" revision="scarthgap" name="meta-cloud-services" path="sources/meta-cloud-services"/>
   <project remote="tetrafolium" revision="2420dd3219eb1d9cbf8327f0b4aca6ec65666cea" name="meta-openembedded" path="sources/meta-openembedded"/>
   <project remote="tetrafolium" revision="889b5059fbabb8404cc9689e76fd102652a91915" name="nanopb" path="sources/nanopb"/>
-
-  <!-- SEAPATH meta layers -->
-  <project name="meta-seapath" revision="scarthgap" remote="seapath" path="sources/meta-seapath"/>
-
-  <!-- Other community repositories -->
-  <project name="agherzan/meta-raspberrypi" revision="scarthgap" remote="github" path="sources/meta-raspberrypi"/>
-  <project name="Wind-River/meta-secure-core" revision="scarthgap" remote="github" path="sources/meta-secure-core"/>
-  <project name="kraj/meta-clang" revision="scarthgap" remote="github" path="sources/meta-clang"/>
-  <project name="sbabic/meta-swupdate" revision="scarthgap" remote="github" path="sources/meta-swupdate"/>
-
 </manifest>
-
