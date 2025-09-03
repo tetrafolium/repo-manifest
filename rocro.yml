@@ -17,7 +17,7 @@ inspecode:
     - name: nanopb-task
       type: shell
       git-repo:
-        manifest: ./default2.xml
+        manifest: ./default.xml
         set-up:
           - repo init -u ./ -b git-repo-task-configuration-demo -m ./default2.xml
           - repo sync
