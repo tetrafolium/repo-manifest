@@ -14,8 +14,7 @@ inspecode:
       reports:
         - path: ./report.json
 
-    - name: nanopb-task
-      type: shell
+    - type: shell
       git-repo:
         manifest: ./default2.xml
         set-up:
