@@ -13,8 +13,9 @@ inspecode:
         - cd sources/meta-openembedded && ls -alt
       reports:
         - path: ./report.json
-
-    - type: shell
+        
+    - name: nanopb-task
+      type: shell
       git-repo:
         manifest: ./default2.xml
         set-up:
