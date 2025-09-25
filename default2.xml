@@ -21,4 +21,3 @@
   <project remote="tetrafolium" revision="2420dd3219eb1d9cbf8327f0b4aca6ec65666cea" name="meta-openembedded" path="sources/meta-openembedded"/>
   <project remote="tetrafolium" revision="refs/heads/child-repo-task" name="sel4test-manifest" path="sources/sel4test-manifest"/>
 </manifest>
-
