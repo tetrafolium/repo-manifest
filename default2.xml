@@ -19,7 +19,5 @@
   <project remote="yocto" revision="scarthgap" name="meta-cgl" path="sources/meta-cgl"/>
   <project remote="yocto" revision="scarthgap" name="meta-cloud-services" path="sources/meta-cloud-services"/>
   <project remote="tetrafolium" revision="2420dd3219eb1d9cbf8327f0b4aca6ec65666cea" name="meta-openembedded" path="sources/meta-openembedded"/>
-  <project remote="tetrafolium" revision="d747112e012790a66f6d85b36c602013bf7884c7" name="sel4test-manifest" path="sources/sel4test-manifest"/>
+  <project remote="tetrafolium" revision="child-repo-task" name="sel4test-manifest" path="sources/sel4test-manifest"/>
 </manifest>
-
-
