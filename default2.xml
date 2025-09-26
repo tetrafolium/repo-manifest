@@ -21,4 +21,3 @@
   <project remote="tetrafolium" revision="scarthgap-add-sarif" name="meta-openembedded" path="sources/meta-openembedded"/>
   <project remote="tetrafolium" revision="refs/heads/child-repo-task" name="sel4test-manifest" path="sources/sel4test-manifest"/>
 </manifest>
-
