@@ -13,8 +13,8 @@ inspecode:
       reports:
         - path: ./report.json
       auto-label:
-        - label: bug
+        - label: "deferred"
           if:
-            match:
+           - match:
               pattern: "length"
               value: ${{issue.description}}
