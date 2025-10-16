@@ -13,8 +13,8 @@ inspecode:
       reports:
         - path: ./report.json
       auto-label:
-        - label: "bug"
+        - label: bug
           if:
             match:
-              pattern: "USELESS_CALL"
+              pattern: "length"
               value: ${{issue.description}}
