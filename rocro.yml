@@ -1,7 +1,6 @@
 inspecode:
   tasks:
-    - name: git-repo-task
-      type: shell
+    - type: shell
       git-repo:
         manifest: ./default.xml
         sharing: true
