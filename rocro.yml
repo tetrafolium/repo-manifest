@@ -6,7 +6,6 @@ inspecode:
         set-up:
           - repo init -u ./ -b git-repo-task-configuration-tag -m ./default.xml
           - repo sync
-        sharing: false
       commands:
         - ls -alt ./
         - cd sources/meta-openembedded && ls -alt
