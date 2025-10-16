@@ -16,5 +16,5 @@ inspecode:
         - label: "deferred"
           if:
            - match:
-              pattern: "*length*"
+              pattern: "*USELESS_CALL*"
               value: ${{issue.description}}
