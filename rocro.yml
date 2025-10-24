@@ -3,18 +3,6 @@ inspecode:
     - name: git-repo-task
       type: shell
       git-repo:
-        set-up:
-          - repo init -u ./ -b git-repo-task-configuration-tag -m ./default.xml
-          - repo sync
         sharing: true
-      commands:
-        - ls -alt ./
-        - cd sources/meta-openembedded && ls -alt
       reports:
         - path: ./report.json
-      auto-label:
-        - label: "deferred"
-          if:
-           - match:
-              pattern: "*length*"
-              value: ${{issue.description}}
