@@ -3,6 +3,9 @@ inspecode:
     - name: git-repo-task
       type: shell
       git-repo:
+        set-up:
+          - repo init -u ./ -b git-repo-task-configuration-tag -m ./default.xml
+          - repo sync
         sharing: true
       reports:
         - path: ./report.json
