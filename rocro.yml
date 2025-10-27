@@ -3,6 +3,7 @@ inspecode:
     - name: git-repo-task
       type: shell
       git-repo:
+        manifest: ./default.xml
         sharing: true
       reports:
         - path: ./report.json
