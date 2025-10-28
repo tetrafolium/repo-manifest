@@ -8,5 +8,7 @@ inspecode:
           - repo sync
         manifest: ./default.xml
         sharing: true
+      commands:
+        - ls -alt ./
       reports:
         - path: ./report.json
