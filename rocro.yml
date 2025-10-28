@@ -4,9 +4,9 @@ inspecode:
       type: shell
       git-repo:
         set-up:
-          - 
+          - echo "nop"
         sharing: true
       commands:
-        - 
+        - echo "nop"
       reports:
         - path: ./report.json
