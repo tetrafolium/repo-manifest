@@ -3,11 +3,11 @@ inspecode:
     - name: git-repo-task
       type: shell
       git-repo:
-        manifest: ./default.xml
+        manifest: ./repo.xml
         set-up:
           - repo init -u ./ -b git-repo-task-configuration-tag -m ./default.xml
           - repo sync
-        sharing: false
+        sharing: ture
       commands:
         - ls -alt ./
         - cd sources/meta-openembedded && ls -alt
