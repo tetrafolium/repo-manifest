@@ -5,8 +5,7 @@ inspecode:
       git-repo:
         manifest: ./default.xml
         set-up:
-          - repo init -u ./ -b git-repo-task-configuration-tag -m ./default.xml
-          - repo sync
+          - exit 42
         sharing: true
       commands:
         - ls -alt ./
