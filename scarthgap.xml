@@ -18,5 +18,5 @@
   <project remote="yocto" revision="scarthgap" name="meta-selinux" path="sources/meta-selinux"/>
   <project remote="yocto" revision="scarthgap" name="meta-cgl" path="sources/meta-cgl"/>
   <project remote="yocto" revision="scarthgap" name="meta-cloud-services" path="sources/meta-cloud-services"/>
-  <project remote="tetrafolium" revision="scarthgap-add-sarif" name="meta-openembedded" path="apps/ap"/>
+  <project remote="tetrafolium" revision="scarthgap-add-sarif" name="meta-openembedded" path="sources/meta-openembedded"/>
 </manifest>
