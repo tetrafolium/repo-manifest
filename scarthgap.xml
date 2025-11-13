@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Copyright (C) 2020, RTE (http://www.rte-france.com) -->
+<!-- Copyright (C) 2023-2024 Savoir-faire Linux, Inc. -->
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<manifest>
+  <!-- Remote repositories definition -->
+  <remote name="tetrafolium" fetch="https://github.com/tetrafolium/"/>
+
+  <project remote="tetrafolium" revision="543b0faec3c86ce0a11ec01236941c601f8f7c92" name="meta-openembedded" path="sources/meta-openembedded"/>
+</manifest>
