@@ -1,11 +1,10 @@
 inspecode:
   tasks:
-    - type: shell
+    - name: git-repo-task
+      type: shell
       git-repo:
         manifest: ./default.xml
-        set-up:
-          - repo init -u ./ -b git-repo-task-configuration-tag -m ./default.xml
-          - repo sync
+        set-up: []
         sharing: true
       commands:
         - ls -alt ./
