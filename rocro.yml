@@ -1,8 +1,9 @@
 inspecode:
   tasks:
-    - name: git-repo-task
+    - name: abcdeabcdeabcdeabcde
       type: shell
       git-repo:
+        manifest: ./default.xml
         set-up:
           - repo init -u ./ -b git-repo-task-configuration-tag -m ./default.xml
           - repo sync
@@ -12,9 +13,3 @@ inspecode:
         - cd sources/meta-openembedded && ls -alt
       reports:
         - path: ./report.json
-      auto-label:
-        - label: "deferred"
-          if:
-           - match:
-              pattern: "*length*"
-              value: ${{issue.description}}
