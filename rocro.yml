@@ -1,6 +1,6 @@
 inspecode:
   tasks:
-    - name: abcdeabcdeabcdeabcde
+    - name: git-repo-task
       type: shell
       git-repo:
         manifest: ./default.xml
