@@ -3,7 +3,7 @@ inspecode:
     - name: git-repo-task
       type: shell
       git-repo:
-        manifest: ./manifest.xml
+        manifest: ./default.xml
         set-up:
           - repo init -u ./ -b git-repo-task-configuration-tag -m ./default.xml
           - repo sync
