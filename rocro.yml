@@ -3,10 +3,8 @@ inspecode:
     - name: git-repo-task
       type: shell
       git-repo:
-        manifest: manifests/projects/mobile/android/platform/proprietary/default.xml
-        set-up:
-          - repo init -u ./ -b git-repo-task-configuration-auto-label -m manifests/projects/mobile/android/platform/proprietary/default.xml
-          - repo sync
+        manifest: ./default.xml
+        set-up: "repo init"
         sharing: true
       commands:
         - ls -alt ./
