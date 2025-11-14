@@ -4,22 +4,9 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default.xml
+        foo: bar
         set-up:
           - repo init -u ./ -b git-repo-task-configuration-tag -m ./default.xml
-          - repo sync
-        sharing: true
-      commands:
-        - ls -alt ./
-        - cd sources/meta-openembedded && ls -alt
-      reports:
-        - path: ./report.json
-
-    - name: git-repo-task
-      type: shell
-      git-repo:
-        manifest: ./default2.xml
-        set-up:
-          - repo init -u ./ -b git-repo-task-configuration-tag -m ./default2.xml
           - repo sync
         sharing: true
       commands:
