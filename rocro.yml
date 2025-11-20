@@ -5,6 +5,7 @@ inspecode:
       git-repo:
         manifest: ./default.xml
         set-up:
+          - exit 42
         sharing: true
       commands:
         - ls -alt ./
