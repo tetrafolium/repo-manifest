@@ -4,7 +4,7 @@
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 <manifest>
   <!-- Remote repositories definition -->
-  <remote name="tetrafolium" fetch="https://github.com/tetrafolium/"/>
+  <remote name="tetrafolium" fetch="ssh://git@github.com"/>
   <remote name="yocto" fetch="git://git.yoctoproject.org"/>
   <remote name="github" fetch="https://github.com/"/>
   <remote name="seapath" fetch="https://github.com/seapath"/>
