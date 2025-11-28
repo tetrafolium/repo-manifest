@@ -1,6 +1,7 @@
 inspecode:
   tasks:
-    - type: shell
+    - name: git-repo-task
+      type: shell
       git-repo:
         manifest: ./default.xml
         set-up:
@@ -9,7 +10,6 @@ inspecode:
         sharing: true
       commands:
         - ls -alt ./
-        - ls -alt ./sources
         - cd sources/meta-openembedded && ls -alt
       reports:
         - path: ./report.json
