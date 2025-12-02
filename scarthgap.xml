@@ -4,12 +4,14 @@
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 <manifest>
   <!-- Remote repositories definition -->
-  <remote name="tetrafolium" fetch="https://github.com/tetrafolium/"/>
+  <remote name="atg" fetch="ssh://git@github.com" alias="origin"/>
   <remote name="yocto" fetch="git://git.yoctoproject.org"/>
   <remote name="github" fetch="https://github.com/"/>
   <remote name="seapath" fetch="https://github.com/seapath"/>
   <remote name="oe" fetch="https://github.com/openembedded"/>
 
+  <default remote="origin" revision="master" sync-j="4"/>
+  
   <project name="poky" revision="scarthgap" remote="yocto" path="sources/poky"/>
   <project remote="yocto" revision="scarthgap" name="meta-virtualization" path="sources/meta-virtualization"/>
   <project remote="yocto" revision="scarthgap" name="meta-dpdk" path="sources/meta-dpdk"/>
@@ -18,5 +20,5 @@
   <project remote="yocto" revision="scarthgap" name="meta-selinux" path="sources/meta-selinux"/>
   <project remote="yocto" revision="scarthgap" name="meta-cgl" path="sources/meta-cgl"/>
   <project remote="yocto" revision="scarthgap" name="meta-cloud-services" path="sources/meta-cloud-services"/>
-  <project remote="tetrafolium" revision="scarthgap-add-sarif" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="atg" revision="scarthgap-add-sarif" name="tetrafolium/meta-openembedded.git" path="sources/meta-openembedded"/>
 </manifest>
