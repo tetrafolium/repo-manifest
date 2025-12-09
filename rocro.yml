@@ -4,6 +4,10 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default.xml
+        foo: bar
+        set-up:
+          - repo init -u ./ -b git-repo-task-configuration-unknow-key -m ./default.xml
+          - repo sync
         sharing: true
       commands:
         - ls -alt ./
