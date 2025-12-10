@@ -2,6 +2,11 @@ inspecode:
   tasks:
     - name: git-repo-task
       type: shell
+      machine:
+        type: local
+        tags:
+          - linux
+          - amd64
       git-repo:
         manifest: ./default.xml
         set-up:
