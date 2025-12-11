@@ -10,6 +10,5 @@ inspecode:
         sharing: true
       commands:
         - ls -alt ./
-        - cd apps/ap.xml && ls -alt
       reports:
         - path: ./report.json
