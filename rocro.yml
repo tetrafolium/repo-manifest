@@ -10,7 +10,6 @@ inspecode:
         sharing: true
       commands:
         - ls -alt ./
-        - cd sources/meta-openembedded && ls -alt
       reports:
         - path: ./report.json
 
@@ -24,6 +23,5 @@ inspecode:
         sharing: true
       commands:
         - ls -alt ./
-        - cd sources/meta-openembedded && ls -alt
       reports:
         - path: ./report.json
