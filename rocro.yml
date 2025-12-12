@@ -7,7 +7,8 @@ inspecode:
         set-up:
           - repo init -u ./ -b git-repo-task-configuration-tag -m ./default.xml
           - repo sync
-        sharing: true
+        sharing: 
+          without: sources/meta-openembedded/ant/*
       commands:
         - ls -alt ./
       reports:
