@@ -4,8 +4,9 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default.xml
-        set-up: []
-        sharing: true
+      set-up:
+        - echo "nop"
+      sharing: true
       commands:
         - ls -alt ./
         - cd sources/meta-openembedded && ls -alt
