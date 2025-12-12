@@ -4,9 +4,7 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default.xml
-        set-up:
-          - repo init -u ./ -b git-repo-task-configuration-tag -m ./default.xml
-          - repo sync
+        set-up: []
         sharing: 
           without: sources/meta-openembedded/ant/*
       commands:
@@ -18,10 +16,9 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default2.xml
-        set-up:
-          - repo init -u ./ -b git-repo-task-configuration-tag -m ./default2.xml
-          - repo sync
-        sharing: true
+        set-up: []
+        sharing: 
+          without: sources/meta-openembedded/ant/*
       commands:
         - ls -alt ./
       reports:
