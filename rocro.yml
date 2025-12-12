@@ -3,7 +3,6 @@ inspecode:
     - name: git-repo-task
       type: shell
       git-repo:
-        manifest: ./default.xml
         sharing:
           without: sources/meta-openembedded/ant/*
       commands:
