@@ -7,7 +7,7 @@ inspecode:
         set-up:
           - echo "nop"
         sharing: 
-          without: sources/meta-openembedded/ant/*
+          without: sources/meta-openembedded/ant/
       commands:
         - ls -alt ./
       reports:
@@ -18,8 +18,7 @@ inspecode:
       git-repo:
         manifest: ./default2.xml
         set-up: []
-        sharing: 
-          without: sources/meta-openembedded/ant/*
+        sharing: true
       commands:
         - ls -alt ./
       reports:
