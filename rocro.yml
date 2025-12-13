@@ -4,10 +4,7 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default.xml
-        set-up:
-          - echo "executing custom set-up"
-          - repo init -u ./ -b git-repo-task-configuration-yaml-setup -m ./default.xml
-          - repo sync
+        set-up: []
         sharing: true
       commands:
         - ls -alt ./
