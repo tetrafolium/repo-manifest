@@ -6,7 +6,7 @@ inspecode:
         manifest: ./default.xml
         set-up:
           - echo "nop"
-        sharing: true
+        sharing: false
       commands:
         - ls -alt ./
       reports:
