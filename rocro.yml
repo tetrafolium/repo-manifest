@@ -4,7 +4,8 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default.xml
-        set-up: []
+        set-up:
+          - repo init -u ./ -m ${ROCRO_REPO_CONFIG} && repo sync
         sharing: 
           without: sources/meta-openembedded/ant/*
       commands:
