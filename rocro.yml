@@ -6,8 +6,7 @@ inspecode:
         manifest: ./default.xml
         set-up:
           - echo "nop"
-        sharing: 
-          without: sources/meta-openembedded/ant/
+        sharing: true
       commands:
         - ls -alt ./
       reports:
