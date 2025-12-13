@@ -5,7 +5,7 @@ inspecode:
       git-repo:
         manifest: ./default.xml
         set-up:
-          - repo init -u ./ -b git-repo-task-configuration-tag-share-without -m default.xml && repo sync
+          - echo "nop"
         sharing: 
           without: sources/meta-openembedded/ant/*
       commands:
