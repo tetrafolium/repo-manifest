@@ -7,7 +7,7 @@ inspecode:
         - ls -alt ./
       reports:
         - path: ./report.json
-    - name: git-repo-sharing-true
+    - name: git-repo-sharing-on
       type: shell
       git-repo:
         sharing: true
@@ -15,7 +15,7 @@ inspecode:
         - ls -alt ./
       reports:
         - path: ./report.json
-    - name: git-repo-sharing-false
+    - name: git-repo-sharing-off
       type: shell
       git-repo:
         sharing: false
