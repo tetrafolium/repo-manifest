@@ -1,23 +1,49 @@
 inspecode:
   tasks:
-    - name: git-repo-task
+    - name: git-repo-all-default
+      type: shell
+      git-repo: {}
+      commands:
+        - ls -alt ./
+      reports:
+        - path: ./report.json
+    - name: git-repo-sharing-true
       type: shell
       git-repo:
-        manifest: ./default.xml
-        set-up:
-          - echo "nop"
+        sharing: true
+      commands:
+        - ls -alt ./
+      reports:
+        - path: ./report.json
+    - name: git-repo-sharing-false
+      type: shell
+      git-repo:
         sharing: false
       commands:
         - ls -alt ./
       reports:
         - path: ./report.json
-
-    - name: nanopb-task
+    - name: git-repo-setup-empty
+      type: shell
+      git-repo:
+        set-up: []
+      commands:
+        - ls -alt ./
+      reports:
+        - path: ./report.json
+    - name: git-repo-setup-echo
+      type: shell
+      git-repo:
+        set-up:
+        - echo "nop"
+      commands:
+        - ls -alt ./
+      reports:
+        - path: ./report.json
+    - name: git-repo-manifest
       type: shell
       git-repo:
         manifest: ./default2.xml
-        set-up: []
-        sharing: true
       commands:
         - ls -alt ./
       reports:
