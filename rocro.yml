@@ -48,3 +48,4 @@ inspecode:
         - ls -alt ./
       reports:
         - path: ./report.json
+
