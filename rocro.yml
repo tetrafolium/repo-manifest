@@ -23,6 +23,7 @@ inspecode:
         - ls -alt ./
       reports:
         - path: ./report.json
+    # aborted
     # https://inspecode.strophoid.io/jobs/github.com/tetrafolium/repo-manifest/228/tasks/shell/3
     # - name: git-repo-setup-empty
     #   type: shell
@@ -41,7 +42,7 @@ inspecode:
         - ls -alt ./
       reports:
         - path: ./report.json
-    - name: git-repo-manifest
+    - name: manifest-only
       type: shell
       git-repo:
         manifest: ./default2.xml
@@ -49,4 +50,40 @@ inspecode:
         - ls -alt ./
       reports:
         - path: ./report.json
-
+    - name: manifest-sharing-on
+      type: shell
+      git-repo:
+        manifest: ./default2.xml
+        sharing: true
+      commands:
+        - ls -alt ./
+      reports:
+        - path: ./report.json
+    - name: manifest-sharing-off
+      type: shell
+      git-repo:
+        manifest: ./default2.xml
+        sharing: false
+      commands:
+        - ls -alt ./
+      reports:
+        - path: ./report.json
+    - name: manifest-setup-empty
+      type: shell
+      git-repo:
+        manifest: ./default2.xml
+        set-up: []
+      commands:
+        - ls -alt ./
+      reports:
+        - path: ./report.json
+    - name: manifest-setup-echo
+      type: shell
+      git-repo:
+        manifest: ./default2.xml
+        set-up:
+        - echo "nop"
+      commands:
+        - ls -alt ./
+      reports:
+        - path: ./report.json
