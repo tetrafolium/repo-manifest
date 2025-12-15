@@ -54,7 +54,7 @@ inspecode:
     - name: manifest-only
       type: shell
       git-repo:
-        manifest: ./default2.xml
+        manifest: ./manifest-only.xml
       commands:
         - ls -alt ./
       reports:
@@ -62,7 +62,7 @@ inspecode:
     - name: manifest-sharing-on
       type: shell
       git-repo:
-        manifest: ./default2.xml
+        manifest: ./manifest-sharing-on.xml
         sharing: true
       commands:
         - ls -alt ./
@@ -71,7 +71,7 @@ inspecode:
     - name: manifest-sharing-off
       type: shell
       git-repo:
-        manifest: ./default2.xml
+        manifest: ./manifest-sharing-off.xml
         sharing: false
       commands:
         - ls -alt ./
@@ -80,7 +80,7 @@ inspecode:
     - name: manifest-without
       type: shell
       git-repo:
-        manifest: ./default2.xml
+        manifest: ./manifest-without.xml
         sharing:
           without: sources/meta-openembedded/ant/
       commands:
@@ -90,7 +90,7 @@ inspecode:
     - name: manifest-setup-empty
       type: shell
       git-repo:
-        manifest: ./default2.xml
+        manifest: ./manifest-setup-empty.xml
         set-up: []
       commands:
         - ls -alt ./
@@ -99,7 +99,7 @@ inspecode:
     - name: manifest-setup-echo
       type: shell
       git-repo:
-        manifest: ./default2.xml
+        manifest: ./manifest-setup-echo.xml
         set-up:
         - echo "nop"
       commands:
@@ -109,7 +109,7 @@ inspecode:
     - name: all-set-sharing-on
       type: shell
       git-repo:
-        manifest: ./default2.xml
+        manifest: ./all-set-sharing-on.xml
         set-up:
         - echo "nop"
         sharing: true
@@ -120,7 +120,7 @@ inspecode:
     - name: all-set-without
       type: shell
       git-repo:
-        manifest: ./default2.xml
+        manifest: ./all-set-without.xml
         set-up:
         - echo "nop"
         sharing:
