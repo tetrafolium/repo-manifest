@@ -34,14 +34,14 @@ inspecode:
         - path: ./report.json
     # aborted
     # https://inspecode.strophoid.io/jobs/github.com/tetrafolium/repo-manifest/228/tasks/shell/3
-    # - name: git-repo-setup-empty
-    #   type: shell
-    #   git-repo:
-    #     set-up: []
-    #   commands:
-    #     - ls -alt ./
-    #   reports:
-    #     - path: ./report.json
+    - name: git-repo-setup-empty
+      type: shell
+      git-repo:
+        set-up: []
+      commands:
+        - ls -alt ./
+      reports:
+        - path: ./report.json
     - name: git-repo-setup-echo
       type: shell
       git-repo:
