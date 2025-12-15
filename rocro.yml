@@ -27,7 +27,7 @@ inspecode:
       type: shell
       git-repo:
         sharing:
-          without: sources/meta-openembedded/ant/
+          without: sources/meta-openembedded/ant/**
       commands:
         - ls -alt ./
       reports:
@@ -82,7 +82,7 @@ inspecode:
       git-repo:
         manifest: ./manifest-without.xml
         sharing:
-          without: sources/meta-openembedded/ant/
+          without: sources/meta-openembedded/ant/**
       commands:
         - ls -alt ./
       reports:
@@ -124,7 +124,7 @@ inspecode:
         set-up:
         - echo "nop"
         sharing:
-          without: sources/meta-openembedded/ant/
+          without: sources/meta-openembedded/ant/**
       commands:
         - ls -alt ./
       reports:
