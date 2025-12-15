@@ -7,7 +7,7 @@ inspecode:
         set-up:
           - echo "nop"
         sharing: 
-          without: sources/meta-openembedded/ant/
+          without: sources/meta-openembedded/ant/**
       commands:
         - ls -alt ./
       reports:
