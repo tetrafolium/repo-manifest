@@ -79,7 +79,7 @@ inspecode:
     - name: manifest-sharing-nil
       type: shell
       git-repo:
-        manifest: ./manifest-sharing-null.xml
+        manifest: ./manifest-sharing-nil.xml
         sharing:
       commands:
         - ls -alt ./
@@ -98,7 +98,7 @@ inspecode:
     - name: manifest-without-nil
       type: shell
       git-repo:
-        manifest: ./manifest-without-null.xml
+        manifest: ./manifest-without-nil.xml
         sharing:
           without:
       commands:
