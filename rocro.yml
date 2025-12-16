@@ -70,6 +70,7 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./manifest-sharing-off.xml
+
         sharing: false
       commands:
         - ls -alt ./
@@ -118,7 +119,7 @@ inspecode:
     - name: all-set-sharing-off
       type: shell
       git-repo:
-        manifest: ./all-set-sharing-on.xml
+        manifest: ./all-set-sharing-off.xml
         set-up:
         - echo "nop"
         sharing: false
@@ -129,7 +130,7 @@ inspecode:
     - name: all-set-setup-empty
       type: shell
       git-repo:
-        manifest: ./all-set-sharing-on.xml
+        manifest: ./all-set-setup-empty.xml
         set-up: []
         sharing: true
       commands:
