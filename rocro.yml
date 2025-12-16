@@ -76,12 +76,31 @@ inspecode:
         - ls -alt ./
       reports:
         - path: ./report.json
+    - name: manifest-sharing-null
+      type: shell
+      git-repo:
+        manifest: ./manifest-sharing-null.xml
+        sharing:
+      commands:
+        - ls -alt ./
+      reports:
+        - path: ./report.json
     - name: manifest-without
       type: shell
       git-repo:
         manifest: ./manifest-without.xml
         sharing:
           without: sources/meta-openembedded/ant/**
+      commands:
+        - ls -alt ./
+      reports:
+        - path: ./report.json
+    - name: manifest-without-null
+      type: shell
+      git-repo:
+        manifest: ./manifest-without-null.xml
+        sharing:
+          without:
       commands:
         - ls -alt ./
       reports:
