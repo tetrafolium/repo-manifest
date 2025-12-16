@@ -76,7 +76,7 @@ inspecode:
         - ls -alt ./
       reports:
         - path: ./report.json
-    - name: manifest-sharing-null
+    - name: manifest-sharing-nil
       type: shell
       git-repo:
         manifest: ./manifest-sharing-null.xml
@@ -95,7 +95,7 @@ inspecode:
         - ls -alt ./
       reports:
         - path: ./report.json
-    - name: manifest-without-null
+    - name: manifest-without-nil
       type: shell
       git-repo:
         manifest: ./manifest-without-null.xml
