@@ -4,10 +4,15 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default.xml
-        set-up:
-          - echo "nop"
+        set-up: []
         sharing: 
           without: sources/meta-openembedded/ant/**
+      machine:
+        type: local
+        tags:
+        - linux
+        - amd64
+        - gcp
       commands:
         - ls -alt ./
       reports:
