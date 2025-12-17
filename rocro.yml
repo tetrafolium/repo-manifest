@@ -3,7 +3,6 @@ inspecode:
     - type: shell
       git-repo:
         manifest: ./default.xml
-        set-up:
         sharing: true
       commands:
         - ls -alt ./
