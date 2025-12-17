@@ -4,8 +4,6 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default.xml
-        sharing: false
-      commands:
-        - ls -alt ./
+        sharing: true
       reports:
         - path: ./report.json
