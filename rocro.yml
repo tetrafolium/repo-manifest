@@ -2,9 +2,11 @@ inspecode:
   tasks:
     - name: git-repo-task
       type: shell
+      set-up:
+        - exit 42
       git-repo:
         manifest: ./default.xml
-        sharing: false
+        sharing: true
       commands:
         - ls -alt ./
       reports:
