@@ -4,7 +4,9 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default.xml
-        set-up: []
+        set-up:
+          - repo init -u ./ -b git-repo-task-configuration-rocro-agent-local -m ./default.xml
+          - repo sync
         sharing: 
           without: sources/meta-openembedded/ant/**
       machine:
