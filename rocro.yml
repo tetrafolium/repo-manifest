@@ -10,20 +10,7 @@ inspecode:
       machine:
         type: local
         tags:
-        - linux
-        - amd64
-        - gcp
-      commands:
-        - ls -alt ./
-      reports:
-        - path: ./report.json
-
-    - name: nanopb-task
-      type: shell
-      git-repo:
-        manifest: ./default2.xml
-        set-up: []
-        sharing: true
+        - rocro-linux-7
       commands:
         - ls -alt ./
       reports:
