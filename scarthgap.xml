@@ -19,5 +19,5 @@
   <project remote="yocto" revision="scarthgap" name="meta-cgl" path="sources/meta-cgl"/>
   <project remote="yocto" revision="scarthgap" name="meta-cloud-services" path="sources/meta-cloud-services"/>
   <project remote="tetrafolium" revision="scarthgap-add-sarif" name="meta-openembedded" path="sources/meta-openembedded"/>
-  <project remote="tetrafolium" revision="refs/tags/v1.0.5" name="nanopb" path="sources/nanopb"/>
+  <project remote="tetrafolium" revision="refs/tags/v1.0.4" name="nanopb" path="sources/nanopb"/>
 </manifest>
