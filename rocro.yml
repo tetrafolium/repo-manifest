@@ -4,7 +4,7 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default.xml
-        sharing: false
+        sharing: ture
       commands:
         - ls -alt ./
       reports:
