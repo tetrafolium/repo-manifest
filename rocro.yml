@@ -8,4 +8,4 @@ inspecode:
       commands:
         - ls -alt ./
       reports:
-        - path: ./feature_fortify.fpr
+        - path: ./artifacts_fortify.fpr
