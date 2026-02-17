@@ -1,0 +1,6 @@
+[submodule "meta-openembedded"]
+	path = meta-openembedded
+	url = https://github.com/tetrafolium/meta-openembedded
+[submodule "nanopb"]
+	path = nanopb
+	url = https://github.com/tetrafolium/nanopb
