@@ -7,4 +7,4 @@ inspecode:
         sharing: true
       commands:
         main:
-          - echo "submodules"
+          - upload report.json
