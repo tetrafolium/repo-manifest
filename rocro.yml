@@ -1,10 +1,12 @@
 inspecode:
   tasks:
     - name: code-analysis
+      type: shell
       git-submodules:
         set-up:
           - git submodule update --init --recursive
         sharing: true
       commands:
-        main:
-          - upload report.json
+        - ls -alt ./
+      reports:
+        - path: ./report.json
