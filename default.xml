@@ -1,1 +1,5 @@
-scarthgap.xml
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+  <remote name="tetrafolium" fetch="https://github.com/tetrafolium/"/>
+  <project remote="tetrafolium" revision="543b0faec3c86ce0a11ec01236941c601f8f7c92" name="meta-openembedded" path="sources/meta-openembedded"/>
+</manifest>

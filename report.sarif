@@ -5,15 +5,20 @@
     {
       "tool": {
         "driver": {
-          "name": "Coverity"
+          "name": "MetadataTestTool"
         }
       },
       "results": [
         {
-          "ruleId": "FORWARD_NULL",
+          "ruleId": "META-001",
           "level": "warning",
+          "rank": 30,
           "message": {
-            "text": "Calling a method on null object \"s\"."
+            "text": "Test warning issue with labels and notes"
+          },
+          "properties": {
+            "labels": ["duplicate", "deferred"],
+            "notes": {"review_status": "pending", "category": "metadata-test"}
           },
           "locations": [
             {
@@ -22,18 +27,22 @@
                   "uri": "ant/src/oata/HelloWorld.java"
                 },
                 "region": {
-                  "startLine": 6,
-                  "endLine": 6
+                  "startLine": 1,
+                  "endLine": 1
                 }
               }
             }
           ]
         },
         {
-          "ruleId": "USELESS_CALL",
-          "level": "warning",
+          "ruleId": "META-002",
+          "level": "error",
+          "rank": 70,
           "message": {
-            "text": "Calling \"s.length()\" is only useful for its return value, which is ignored."
+            "text": "Test error issue with false positive label"
+          },
+          "properties": {
+            "labels": ["false positive", "flaky"]
           },
           "locations": [
             {
@@ -42,8 +51,29 @@
                   "uri": "ant/src/oata/HelloWorld.java"
                 },
                 "region": {
-                  "startLine": 6,
-                  "endLine": 6
+                  "startLine": 5,
+                  "endLine": 5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "META-003",
+          "level": "note",
+          "rank": 5,
+          "message": {
+            "text": "Test info issue - severity should stay as info"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ant/src/oata/HelloWorld.java"
+                },
+                "region": {
+                  "startLine": 10,
+                  "endLine": 10
                 }
               }
             }

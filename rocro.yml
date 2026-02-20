@@ -1,11 +1,11 @@
 inspecode:
   tasks:
-    - name: child-repo
+    - name: git-repo-metadata-test
       type: shell
+      git-repo:
+        manifest: ./default.xml
+        sharing: true
       commands:
-        - sudo ls -alt ./
-        - sudo cat ./report.sarif
-      artifacts:
-        - path: ./report.sarif
+        - cat ./report.sarif
       reports:
         - path: ./report.sarif
