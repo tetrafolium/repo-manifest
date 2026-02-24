@@ -1,6 +1,6 @@
 inspecode:
   tasks:
-    - name: git-repo-metadata-test
+    - name: metadata-test
       type: shell
       git-repo:
         manifest: ./default.xml
