@@ -24,7 +24,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "sources/meta-openembedded/README"
+                  "uri": "sources/meta-openembedded/README.md"
                 },
                 "region": {
                   "startLine": 1,
@@ -48,7 +48,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "sources/meta-openembedded/README"
+                  "uri": "sources/meta-openembedded/README.md"
                 },
                 "region": {
                   "startLine": 5,
@@ -69,7 +69,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "sources/meta-openembedded/README"
+                  "uri": "sources/meta-openembedded/README.md"
                 },
                 "region": {
                   "startLine": 10,
