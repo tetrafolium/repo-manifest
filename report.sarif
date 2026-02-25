@@ -17,6 +17,7 @@
             "text": "Test warning issue with labels and notes"
           },
           "properties": {
+            "assignees": ["k-hanakawa"],
             "labels": ["duplicate", "deferred"],
             "notes": {"review_status": "pending", "category": "metadata-test"}
           },
