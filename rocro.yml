@@ -4,7 +4,7 @@ inspecode:
       type: shell
       git-submodules:
         set-up:
-          - git submodule update --init --recursive
+          - exit 42
         sharing: true
       commands:
         - ls -alt ./
