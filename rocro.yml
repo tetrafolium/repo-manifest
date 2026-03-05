@@ -10,3 +10,8 @@ inspecode:
         - ls -alt ./
       reports:
         - path: ./report.json
+
+    - name: code-analysis
+      type: shell
+      commands:
+        - echo "test duplicate task"
