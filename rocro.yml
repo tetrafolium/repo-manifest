@@ -3,8 +3,7 @@ inspecode:
     - name: code-analysis
       type: shell
       git-submodules:
-        set-up:
-          - git submodule update --init --recursive
+        set-up: git submodule update --init --recursive
         sharing: true
       commands:
         - ls -alt ./
