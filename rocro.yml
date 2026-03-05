@@ -1,7 +1,6 @@
 inspecode:
   tasks:
-    - name: code-analysis
-      type: shell
+    - type: shell
       git-submodules:
         set-up:
           - git submodule update --init --recursive
