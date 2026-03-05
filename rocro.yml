@@ -1,6 +1,6 @@
 inspecode:
   tasks:
-    - name: code-analysis
+    - name: 12345678901234567890
       type: shell
       git-submodules:
         set-up:
