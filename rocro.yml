@@ -1,6 +1,6 @@
 inspecode:
   tasks:
-    - name: 1234567890123456789a
+    - name: a234567890123456789a
       type: shell
       git-submodules:
         set-up:
