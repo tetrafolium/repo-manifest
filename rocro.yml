@@ -10,3 +10,9 @@ inspecode:
         - ls -alt ./
       reports:
         - path: ./report.json
+      auto-label:
+        - label: "deferred"
+          if:
+           - match:
+              pattern: "*USELESS_CALL*"
+              value: ${{issue.description}}
