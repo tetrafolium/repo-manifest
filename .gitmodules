@@ -4,3 +4,7 @@
 [submodule "nanopb"]
 	path = nanopb
 	url = https://github.com/tetrafolium/nanopb
+[submodule "inspecode-survey"]
+	path = inspecode-survey
+	url = https://github.com/tetrafolium/inspecode-survey.git
+	branch = codelift-issue-4862-check-user-license-fortify-coverity
