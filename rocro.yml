@@ -9,4 +9,4 @@ inspecode:
       commands:
         - ls -alt ./
       reports:
-        - path: ./report.json
+        - path: ./fortify_gitrepo.fpr
