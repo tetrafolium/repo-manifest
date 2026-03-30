@@ -1,0 +1,111 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "AutoLabelTestTool"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "LABEL-001",
+          "level": "error",
+          "rank": 80,
+          "message": {
+            "text": "Issue with multiple labels - should all propagate to child repo"
+          },
+          "properties": {
+            "labels": ["bug", "high-priority", "security"],
+            "assignees": ["k-hanakawa"],
+            "notes": {"source": "auto-label-test", "severity_override": "critical"}
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sources/meta-openembedded/README.md"
+                },
+                "region": {
+                  "startLine": 1,
+                  "endLine": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "LABEL-002",
+          "level": "warning",
+          "rank": 40,
+          "message": {
+            "text": "Issue with deferred label - should propagate as-is"
+          },
+          "properties": {
+            "labels": ["deferred", "wontfix"]
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sources/meta-openembedded/README.md"
+                },
+                "region": {
+                  "startLine": 15,
+                  "endLine": 15
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "LABEL-003",
+          "level": "note",
+          "rank": 10,
+          "message": {
+            "text": "Issue with no labels - child repo should have no labels"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sources/meta-openembedded/README.md"
+                },
+                "region": {
+                  "startLine": 20,
+                  "endLine": 20
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "LABEL-004",
+          "level": "error",
+          "rank": 60,
+          "message": {
+            "text": "Issue with false positive label and notes - both should propagate"
+          },
+          "properties": {
+            "labels": ["false positive"],
+            "notes": {"reason": "known limitation in parser", "reviewer": "test-user"}
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sources/meta-openembedded/README.md"
+                },
+                "region": {
+                  "startLine": 25,
+                  "endLine": 25
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
