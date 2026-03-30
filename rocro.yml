@@ -9,3 +9,12 @@ inspecode:
         - cat ./report.sarif
       reports:
         - path: ./report.sarif
+    - name: auto-label-test
+      type: shell
+      git-repo:
+        manifest: ./default.xml
+        sharing: true
+      commands:
+        - cat ./report-auto-label.sarif
+      reports:
+        - path: ./report-auto-label.sarif
