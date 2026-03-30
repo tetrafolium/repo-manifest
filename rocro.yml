@@ -3,9 +3,8 @@ inspecode:
     - name: child-repo
       type: shell
       commands:
-        - sudo ls -alt ./
-        - sudo cat ./report.sarif
+        - cat ./report.json
       artifacts:
-        - path: ./report.sarif
+        - path: ./report.json
       reports:
-        - path: ./report.sarif
+        - path: ./report.json
