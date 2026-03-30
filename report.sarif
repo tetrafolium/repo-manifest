@@ -29,9 +29,107 @@
                 },
                 "region": {
                   "startLine": 1,
-                  "endLine": 1
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 50
                 }
               }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sources/meta-openembedded/README.md"
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 40
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sources/meta-openembedded/README.md"
+                },
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 1,
+                  "endLine": 10,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "sources/meta-openembedded/README.md",
+                            "uriBaseId": "REPOROOT"
+                          },
+                          "region": {
+                            "startLine": 1,
+                            "startColumn": 1,
+                            "endLine": 1,
+                            "endColumn": 50
+                          }
+                        },
+                        "message": {
+                          "text": "Variable \"config\" is assigned null."
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "sources/meta-openembedded/README.md",
+                            "uriBaseId": "REPOROOT"
+                          },
+                          "region": {
+                            "startLine": 5,
+                            "startColumn": 1,
+                            "endLine": 5,
+                            "endColumn": 40
+                          }
+                        },
+                        "message": {
+                          "text": "Condition \"config == null\" is true."
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "sources/meta-openembedded/README.md",
+                            "uriBaseId": "REPOROOT"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 1,
+                            "endLine": 10,
+                            "endColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "Calling method on null object \"config\"."
+                        }
+                      },
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
