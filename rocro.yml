@@ -12,6 +12,30 @@ inspecode:
       auto-label:
         - label: "deferred"
           if:
-           - match:
-              pattern: "*USELESS_CALL*"
-              value: ${{issue.description}}
+            - match:
+                pattern: "*USELESS_CALL*"
+                value: ${{issue.description}}
+
+        - label: "low-priority"
+          if:
+            - match:
+                pattern: "*USELESS_CALL*"
+                value: ${{issue.description}}
+
+        - label: "null-pointer"
+          if:
+            - match:
+                pattern: "*FORWARD_NULL*"
+                value: ${{issue.description}}
+
+        - label: "bug"
+          if:
+            - match:
+                pattern: "*FORWARD_NULL*"
+                value: ${{issue.description}}
+
+        - label: "needs-fix"
+          if:
+            - match:
+                pattern: "*FORWARD_NULL*"
+                value: ${{issue.description}}
