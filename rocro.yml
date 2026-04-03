@@ -16,13 +16,13 @@ inspecode:
                 pattern: "*USELESS_CALL*"
                 value: ${{issue.description}}
 
-        - label: "low-priority"
+        - label: "Ignored"
           if:
             - match:
                 pattern: "*USELESS_CALL*"
                 value: ${{issue.description}}
 
-        - label: "null-pointer"
+        - label: "impact_high"
           if:
             - match:
                 pattern: "*FORWARD_NULL*"
@@ -34,7 +34,7 @@ inspecode:
                 pattern: "*FORWARD_NULL*"
                 value: ${{issue.description}}
 
-        - label: "needs-fix"
+        - label: "license"
           if:
             - match:
                 pattern: "*FORWARD_NULL*"
