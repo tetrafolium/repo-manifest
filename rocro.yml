@@ -16,13 +16,13 @@ inspecode:
                 pattern: "*USELESS_CALL*"
                 value: ${{issue.description}}
 
-        - label: "Ignored"
+        - label: "duplicate"
           if:
             - match:
                 pattern: "*USELESS_CALL*"
                 value: ${{issue.description}}
 
-        - label: "impact_high"
+        - label: "license"
           if:
             - match:
                 pattern: "*FORWARD_NULL*"
