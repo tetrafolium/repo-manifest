@@ -22,11 +22,11 @@ inspecode:
         - label: "deferred"
           if:
             - match:
-                pattern: "*[severity_override]critical*"
+                pattern: "*Issue with multiple labels*"
                 value: ${{issue.description}}
                 
         - label: "license"
           if:
             - match:
-                pattern: "*[severity_override]critical*"
+                pattern: "*Issue with multiple labels*"
                 value: ${{issue.description}}
