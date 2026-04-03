@@ -18,3 +18,15 @@ inspecode:
         - cat ./report-auto-label.sarif
       reports:
         - path: ./report-auto-label.sarif
+      auto-label:
+        - label: "deferred"
+          if:
+            - match:
+                pattern: "*[severity_override]critical*"
+                value: ${{issue.description}}
+                
+        - label: "license"
+          if:
+            - match:
+                pattern: "*[severity_override]critical*"
+                value: ${{issue.description}}
