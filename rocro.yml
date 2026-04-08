@@ -10,3 +10,7 @@ inspecode:
         - cd sources/meta-openembedded && ls -alt
       reports:
         - path: ./report.json
+
+  tools:
+    coverity: default
+
