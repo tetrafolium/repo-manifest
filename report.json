@@ -221,7 +221,7 @@
       "language": "Java",
       "mainEventFilePathname": "/home/rocro/src/github.com/tetrafolium/repo-manifest/sources/meta-openembedded/src/oata/HelloWorld.java",
       "strippedMainEventFilePathname": "/home/rocro/src/github.com/tetrafolium/repo-manifest/sources/meta-openembedded/src/oata/HelloWorld.java",
-      "mainEventLineNumber": 9,
+      "mainEventLineNumber": 14,
       "properties": {},
       "functionDisplayName": "oata.HelloWorld.triggerForwardedNullDeref(java.lang.String)",
       "functionMangledName": "oata.HelloWorld.triggerForwardedNullDeref(java.lang.String)",
@@ -424,15 +424,15 @@
           "events": null
         },
         {
-          "covLStrEventDescription": "{CovLStrv2{{t{Passing null object {0} from repo-manifest into the meta-openembedded HelloWorld code path.}{{code{value}}}}}}",
-          "eventDescription": "Passing null object \"value\" from repo-manifest into the meta-openembedded HelloWorld code path.",
+          "covLStrEventDescription": "{CovLStrv2{{t{Returning null object {0} from CoverityNullDeref into the HelloWorld caller.}{{code{value}}}}}}",
+          "eventDescription": "Returning null object \"value\" from CoverityNullDeref into the HelloWorld caller.",
           "eventNumber": 14,
           "eventTreePosition": "14",
           "eventSet": 0,
-          "eventTag": "pass_forward_null",
-          "filePathname": "/home/rocro/src/github.com/tetrafolium/repo-manifest/ant/src/oata/CoverityNullDeref.java",
-          "strippedFilePathname": "/home/rocro/src/github.com/tetrafolium/repo-manifest/ant/src/oata/CoverityNullDeref.java",
-          "lineNumber": 68,
+          "eventTag": "return_forward_null",
+          "filePathname": "/home/rocro/src/github.com/tetrafolium/repo-manifest/sources/meta-openembedded/src/oata/HelloWorld.java",
+          "strippedFilePathname": "/home/rocro/src/github.com/tetrafolium/repo-manifest/sources/meta-openembedded/src/oata/HelloWorld.java",
+          "lineNumber": 9,
           "main": false,
           "moreInformationId": null,
           "remediation": false,
@@ -447,7 +447,7 @@
           "eventTag": "null_method_call",
           "filePathname": "/home/rocro/src/github.com/tetrafolium/repo-manifest/sources/meta-openembedded/src/oata/HelloWorld.java",
           "strippedFilePathname": "/home/rocro/src/github.com/tetrafolium/repo-manifest/sources/meta-openembedded/src/oata/HelloWorld.java",
-          "lineNumber": 9,
+          "lineNumber": 14,
           "main": true,
           "moreInformationId": null,
           "remediation": false,
@@ -464,9 +464,9 @@
         "eventSetCaptions": [],
         "impact": "Medium",
         "impactDescription": "Medium",
-        "subcategoryLocalEffect": "A null pointer dereference occurs after a value crosses from the manifest repository into a checked out repository.",
+        "subcategoryLocalEffect": "A null pointer dereference occurs after HelloWorld retrieves a null value from manifest repository code.",
         "subcategoryShortDescription": "Null forwarded across repositories",
-        "subcategoryLongDescription": "A null value originates in repo-manifest code, is forwarded through CoverityNullDeref, and is dereferenced in the checked out meta-openembedded HelloWorld helper."
+        "subcategoryLongDescription": "A null value originates in repo-manifest code, is forwarded through CoverityNullDeref, returned to the checked out meta-openembedded HelloWorld caller, and then dereferenced there."
       }
     }
   ],
