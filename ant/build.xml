@@ -1,6 +1,7 @@
 <project name="HelloWorld" basedir="." default="main">
 
     <property name="src.dir"     value="src"/>
+    <property name="virtual.src.dir" value="../sources/meta-openembedded/ant/src"/>
 
     <property name="build.dir"   value="build"/>
     <property name="classes.dir" value="${build.dir}/classes"/>
@@ -16,7 +17,10 @@
 
     <target name="compile">
         <mkdir dir="${classes.dir}"/>
-        <javac srcdir="${src.dir}" destdir="${classes.dir}"/>
+        <javac
+            srcdir="${src.dir}"
+            sourcepath="${src.dir}:${virtual.src.dir}"
+            destdir="${classes.dir}"/>
     </target>
 
     <target name="release" depends="compile">
