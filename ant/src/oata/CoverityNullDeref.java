@@ -1,6 +1,10 @@
 package oata;
 
 public class CoverityNullDeref {
+    public static void main(String[] args) {
+        runCrossRepoNullDerefScenario();
+    }
+
     public static int getMessageLength(String input) {
         String value = input;
 
@@ -9,5 +13,58 @@ public class CoverityNullDeref {
         }
 
         return value.length();
+    }
+
+    public static int runCrossRepoNullDerefScenario() {
+        String manifestValue = null;
+        return passThrough01(manifestValue);
+    }
+
+    private static int passThrough01(String value) {
+        return passThrough02(value);
+    }
+
+    private static int passThrough02(String value) {
+        return passThrough03(value);
+    }
+
+    private static int passThrough03(String value) {
+        return passThrough04(value);
+    }
+
+    private static int passThrough04(String value) {
+        return passThrough05(value);
+    }
+
+    private static int passThrough05(String value) {
+        return passThrough06(value);
+    }
+
+    private static int passThrough06(String value) {
+        return passThrough07(value);
+    }
+
+    private static int passThrough07(String value) {
+        return passThrough08(value);
+    }
+
+    private static int passThrough08(String value) {
+        return passThrough09(value);
+    }
+
+    private static int passThrough09(String value) {
+        return passThrough10(value);
+    }
+
+    private static int passThrough10(String value) {
+        return passThrough11(value);
+    }
+
+    private static int passThrough11(String value) {
+        return passThrough12(value);
+    }
+
+    private static int passThrough12(String value) {
+        return HelloWorld.triggerForwardedNullDeref(value);
     }
 }

@@ -48,6 +48,26 @@
               }
             }
           ]
+        },
+        {
+          "ruleId": "FORWARD_NULL",
+          "level": "warning",
+          "message": {
+            "text": "Calling a method on null object \"value\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "sources/meta-openembedded/src/oata/HelloWorld.java"
+                },
+                "region": {
+                  "startLine": 9,
+                  "endLine": 9
+                }
+              }
+            }
+          ]
         }
       ]
     }
