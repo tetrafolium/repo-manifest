@@ -11,6 +11,6 @@ inspecode:
       reports:
         - path: ./report.json
 
-  tools:
-    coverity: default
+  # tools:
+  #  coverity: default
 
