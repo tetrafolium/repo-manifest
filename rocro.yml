@@ -7,7 +7,7 @@ inspecode:
           - git submodule update --init --recursive
         sharing:
           without:
-            - nanopb
+            - meta-openembedded
       commands:
         - ls -alt ./
       reports:
