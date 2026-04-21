@@ -1,6 +1,5 @@
 inspecode:
-
-
   tools:
-    coverity: default
-
+    coverity:
+      machine:
+        cpu: 1.0  # Python projects: CPU 1.0 to avoid timeout (default 0.75 too close to 90min limit)
