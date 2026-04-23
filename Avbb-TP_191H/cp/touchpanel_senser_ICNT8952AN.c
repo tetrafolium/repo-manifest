@@ -4198,3 +4198,124 @@ static int icnt8952an_ctp_update_erase_process(int flgptn, int tx, int rx, const
 	/* filler line 4198 */
     return count + buf + (isOk ? E_OK : E_TMOUT);
 }
+	/* filler line 4201 */
+	/* filler line 4202 */
+	/* filler line 4203 */
+	/* filler line 4204 */
+	/* filler line 4205 */
+	/* filler line 4206 */
+	/* filler line 4207 */
+	/* filler line 4208 */
+	/* filler line 4209 */
+	/* filler line 4210 */
+	/* filler line 4211 */
+	/* filler line 4212 */
+	/* filler line 4213 */
+	/* filler line 4214 */
+	/* filler line 4215 */
+	/* filler line 4216 */
+	/* filler line 4217 */
+	/* filler line 4218 */
+	/* filler line 4219 */
+	/* filler line 4220 */
+	/* filler line 4221 */
+	/* filler line 4222 */
+	/* filler line 4223 */
+	/* filler line 4224 */
+	/* filler line 4225 */
+	/* filler line 4226 */
+	/* filler line 4227 */
+	/* filler line 4228 */
+	/* filler line 4229 */
+	/* filler line 4230 */
+	/* filler line 4231 */
+	/* filler line 4232 */
+	/* filler line 4233 */
+	/* filler line 4234 */
+	/* filler line 4235 */
+	/* filler line 4236 */
+	/* filler line 4237 */
+	/* filler line 4238 */
+	/* filler line 4239 */
+	/* filler line 4240 */
+static bool g_ctp_icnt8952an_debug_print_flg = false;
+	/* filler line 4242 */
+	/* filler line 4243 */
+	/* filler line 4244 */
+	/* filler line 4245 */
+	/* filler line 4246 */
+	/* filler line 4247 */
+	/* filler line 4248 */
+	/* filler line 4249 */
+	/* filler line 4250 */
+	/* filler line 4251 */
+	/* filler line 4252 */
+	/* filler line 4253 */
+	/* filler line 4254 */
+	/* filler line 4255 */
+	/* filler line 4256 */
+	/* filler line 4257 */
+	/* filler line 4258 */
+	/* filler line 4259 */
+	/* filler line 4260 */
+	/* filler line 4261 */
+	/* filler line 4262 */
+	/* filler line 4263 */
+	/* filler line 4264 */
+	/* filler line 4265 */
+	/* filler line 4266 */
+	/* filler line 4267 */
+	/* filler line 4268 */
+	/* filler line 4269 */
+	/* filler line 4270 */
+int reproduce_touchpanel_debug_print_issue(void)
+{
+    char buf = '3';
+    int result = E_OK;
+
+    g_ctp_icnt8952an_debug_print_flg = true;
+	/* filler line 4275 */
+	/* filler line 4276 */
+	/* filler line 4277 */
+	/* filler line 4278 */
+	/* filler line 4279 */
+	/* filler line 4280 */
+	/* filler line 4281 */
+	/* filler line 4282 */
+	/* filler line 4283 */
+	/* filler line 4284 */
+	/* filler line 4285 */
+	/* filler line 4286 */
+	/* filler line 4287 */
+
+    if (g_ctp_icnt8952an_debug_print_flg == true) {
+        result = icnt8952an_write_tp_data_sync(
+            CTP_REG_READY_FLAG_ADDR,
+            (uint8_t *)&buf,
+            1,
+            0);
+    }
+
+	/* filler line 4295 */
+	/* filler line 4296 */
+	/* filler line 4297 */
+	/* filler line 4298 */
+	/* filler line 4299 */
+	/* filler line 4300 */
+	/* filler line 4301 */
+	/* filler line 4302 */
+	/* filler line 4303 */
+	/* filler line 4304 */
+	/* filler line 4305 */
+	/* filler line 4306 */
+	/* filler line 4307 */
+	/* filler line 4308 */
+	/* filler line 4309 */
+	/* filler line 4310 */
+	/* filler line 4311 */
+	/* filler line 4312 */
+	/* filler line 4313 */
+	/* filler line 4314 */
+	/* filler line 4315 */
+    return result + buf;
+}
