@@ -7,6 +7,6 @@ inspecode:
         sharing:
           enable: true
       commands:
-        - ls -alt ./
+        - cat ./report.sarif
       reports:
-        - path: ./report.json
+        - path: ./report.sarif
