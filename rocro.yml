@@ -8,6 +8,6 @@ inspecode:
           enable: true
           branch: vendor
       commands:
-        - ls -alt ./
+        - cat ./report.sarif
       reports:
-        - path: ./report.json
+        - path: ./report.sarif
