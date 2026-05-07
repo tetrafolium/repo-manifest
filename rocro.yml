@@ -7,6 +7,6 @@ inspecode:
         sharing:
           branch: deps~implicit
       commands:
-        - ls -alt ./
+        - cat ./report.sarif
       reports:
-        - path: ./report.json
+        - path: ./report.sarif
