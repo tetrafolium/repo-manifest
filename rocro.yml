@@ -4,7 +4,9 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default.xml
-        sharing: true
+        sharing:
+          enable: true
+          branch: "deps vendor~main"
       commands:
         - ls -alt ./
       reports:
