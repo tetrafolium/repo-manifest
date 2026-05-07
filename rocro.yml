@@ -4,7 +4,9 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default.xml
-        sharing: true
+        sharing:
+          enable: true
+          branch: a~bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
       commands:
         - ls -alt ./
       reports:
