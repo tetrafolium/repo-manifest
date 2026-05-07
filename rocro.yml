@@ -8,9 +8,9 @@ inspecode:
           enable: true
           branch: deps~main
       commands:
-        - ls -alt ./
+        - cat ./report.sarif
       reports:
-        - path: ./report.json
+        - path: ./report.sarif
     - name: code-analysis
       type: shell
       git-submodules:
@@ -20,6 +20,6 @@ inspecode:
           enable: true
           branch: vendor~sub
       commands:
-        - ls -alt ./
+        - cat ./report.sarif
       reports:
-        - path: ./report.json
+        - path: ./report.sarif
