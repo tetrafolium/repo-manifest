@@ -8,9 +8,9 @@ inspecode:
           enable: true
           branch: deps~main
       commands:
-        - ls -alt ./
+        - cat ./report.sarif
       reports:
-        - path: ./report.json
+        - path: ./report.sarif
     - name: code-analysis
       type: shell
       git-submodules:
@@ -18,6 +18,6 @@ inspecode:
           - git submodule update --init --recursive
         sharing: true
       commands:
-        - ls -alt ./
+        - cat ./report.sarif
       reports:
-        - path: ./report.json
+        - path: ./report.sarif
