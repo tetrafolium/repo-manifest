@@ -5,7 +5,9 @@ inspecode:
       git-submodules:
         set-up:
           - git submodule update --init --recursive
-        sharing: false
+        sharing:
+          enable: true
+          branch: vendor~submod
       commands:
         - ls -alt ./
       reports:
