@@ -1,11 +1,22 @@
 inspecode:
   tasks:
+    - name: nanopb-task
+      type: shell
+      git-repo:
+        manifest: ./default.xml
+        sharing: true
+      commands:
+        - ls -alt ./
+      reports:
+        - path: ./report.json
     - name: code-analysis
       type: shell
       git-submodules:
         set-up:
           - git submodule update --init --recursive
-        sharing: false
+        sharing:
+          enable: true
+          branch: vendor~sub
       commands:
         - ls -alt ./
       reports:
