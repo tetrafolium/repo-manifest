@@ -7,6 +7,6 @@ inspecode:
           - git submodule update --init --recursive
         sharing: true
       commands:
-        - ls -alt ./
+        - cat ./report.sarif
       reports:
-        - path: ./report.json
+        - path: ./report.sarif
