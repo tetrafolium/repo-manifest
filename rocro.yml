@@ -8,6 +8,6 @@ inspecode:
           enable: false
           branch: deps~conflict
       commands:
-        - ls -alt ./
+        - cat ./report.sarif
       reports:
-        - path: ./report.json
+        - path: ./report.sarif
