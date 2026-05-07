@@ -4,7 +4,10 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default.xml
-        sharing: true
+        sharing:
+          enable: false
+          without:
+            - some/pattern
       commands:
         - ls -alt ./
       reports:
