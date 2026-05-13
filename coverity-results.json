@@ -1,0 +1,24 @@
+{
+  "type" : "Coverity issues",
+  "formatVersion" : 7,
+  "suppressedIssueCount" : 0,
+  "issues" : [
+    {
+      "checkerName" : "DUMMY_CHECKER",
+      "extra" : "x",
+      "mainEventFilePathname" : "README.adoc",
+      "mainEventLineNumber" : 1,
+      "events" : [
+        {
+          "main" : true,
+          "eventNumber" : 1,
+          "eventTag" : "dummy",
+          "eventDescription" : "dummy issue from submodule windows agent test"
+        }
+      ],
+      "checkerProperties" : {
+        "impact" : "Medium"
+      }
+    }
+  ]
+}

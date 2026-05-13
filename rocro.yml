@@ -14,12 +14,12 @@ inspecode:
         - Write-Output "--- Listing submodule contents ---"
         - Get-ChildItem -Path meta-openembedded -ErrorAction SilentlyContinue | Select-Object -First 5 Name
         - Get-ChildItem -Path nanopb -ErrorAction SilentlyContinue | Select-Object -First 5 Name
-        - Write-Output "--- Report file ---"
-        - Get-Content ./report.sarif
+        - Write-Output "--- Coverity report ---"
+        - Get-Content ./coverity-results.json
       machine:
         type: local
         tags:
           - windows
           - windows1
       reports:
-        - path: ./report.sarif
+        - path: ./coverity-results.json
