@@ -5,7 +5,7 @@ inspecode:
       git-repo:
         manifest: ./default.xml
         sharing:
-          enable: false
+          enable: true
       commands:
         - ls -alt ./
       reports:
