@@ -4,9 +4,6 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default.xml
-        set-up:
-          - repo init -u ./ -b git-repo-task-configuration-tag-no-parent-snippet -m ./default.xml
-          - repo sync
         sharing: true
       commands:
         - ls -alt ./
@@ -17,9 +14,6 @@ inspecode:
       type: shell
       git-repo:
         manifest: ./default2.xml
-        set-up:
-          - repo init -u ./ -b git-repo-task-configuration-tag-no-parent-snippet -m ./default2.xml
-          - repo sync
         sharing: true
       commands:
         - ls -alt ./
