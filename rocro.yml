@@ -5,7 +5,7 @@ inspecode:
       git-repo:
         manifest: ./default.xml
         set-up:
-          - repo init -u ./ -b git-repo-task-configuration-demo -m ./default.xml
+          - repo init -u ./ -m default.xml
           - repo sync
         sharing: true
       commands:
