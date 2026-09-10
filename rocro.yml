@@ -30,3 +30,12 @@ inspecode:
             - match:
                 pattern: "*Issue with multiple labels*"
                 value: ${{issue.description}}
+  tools:
+    fossid:
+      options:
+        --sbom: spdx
+      ignore:
+        - '**/src/test/**/*.java'
+        - '**/*Test.java'
+        - '**/*Tests.java'
+        - '**/*IT.java'
